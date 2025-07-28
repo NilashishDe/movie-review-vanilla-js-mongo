@@ -61,4 +61,8 @@ app.post('/submit_review', async (req, res) => {
     res.redirect("/")
 })
 
-app.listen(3001)
+// Start the server
+const PORT = 3001;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
